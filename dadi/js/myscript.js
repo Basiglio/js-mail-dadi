@@ -12,11 +12,11 @@ console.log(userNumber);
 
 // stabilisco il vincitore
 if (pcNumber < userNumber) {
-  alert("hai vinto")
-} else if (pcNumber = userNumber) {
-  alert("pareggio")
+  alert("hai vinto");
+} else if (pcNumber == userNumber) {
+  alert("pareggio");
 } else  {
-  alert("hai perso")
+  alert("hai perso");
 }
 
 // stampo il vincitore
