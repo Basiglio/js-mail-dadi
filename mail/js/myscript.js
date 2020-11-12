@@ -5,19 +5,19 @@
 
 // chiedo all'utente l'email
 var mailUtente = prompt("inserisci la tua eMail!");
-console.log(mailUtente)
+console.log(mailUtente);
 
 // creo il mio array
-var elencoMail = ["emilio@mail.com", "pippo@mail.com", "pluto@mail.com", "paperino@mail.com", "topolino@mail.com"]
+var elencoMail = ["emilio@mail.com", "pippo@mail.com", "pluto@mail.com", "paperino@mail.com", "topolino@mail.com"];
 
 
 
-// for (var i = 0; i < elencoMail.length; i++) {
-//   console.log(elencoMail[i])
-// }
+for (var i = 0; i < elencoMail.length; i++) {
+  console.log(elencoMail[i]);
+  if (i == mailUtente) {
+    alert("BENVENUTO NEL SITO");
+  } else {
+    alert("LA TUA EMAIL NON é REGISTATA NEL NOSTRO SERVER");
+  }
 
-if (mailUtente == elencoMail) {
-  alert("BENVENUTO NEL SITO")
-} else {
-  alert("LA TUA EMAIL NON é REGISTATA NEL NOSTRO SERVER")
 }
