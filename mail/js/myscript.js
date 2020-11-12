@@ -11,13 +11,16 @@ console.log(mailUtente);
 var elencoMail = ["emilio@mail.com", "pippo@mail.com", "pluto@mail.com", "paperino@mail.com", "topolino@mail.com"];
 
 
+var result = false;
 
 for (var i = 0; i < elencoMail.length; i++) {
-  console.log(elencoMail[i]);
-  if (i == mailUtente) {
-    alert("BENVENUTO NEL SITO");
-  } else {
-    alert("LA TUA EMAIL NON é REGISTATA NEL NOSTRO SERVER");
+  if (mailUtente == elencoMail[i]) {
+   result = true;
   }
+}
 
+if (result === true) {
+  alert("ACCESSO CONSENTITO");
+} else {
+  alert("ACCESSO NON CONSENTITO");
 }
